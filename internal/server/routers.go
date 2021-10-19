@@ -5,7 +5,7 @@ import (
 	"github.com/gokure/gin-blog/internal/api"
 )
 
-func InitRouter(engine *gin.Engine) *gin.Engine {
+func registerRoutes(engine *gin.Engine) *gin.Engine {
 	route := engine.Group("/api")
 	{
 		route.GET("/ping", api.GetPing)
